@@ -1,0 +1,227 @@
+﻿body{
+	background-color: #2a2a2a;
+}
+
+#header{
+	width: 100%;
+	height: 38px;
+}
+
+#subHeader{
+	width: 1000px;
+	height: 38px;
+	margin: 0 auto;
+}
+
+#subHeaderLogo{
+	width: 268px;
+	height: 38px;
+	background-image:url('../image/logo_268_38.jpg');
+	float: left;
+}
+
+#content{
+	width: 100%;
+	height: 480px;
+	background-color: #2a2a2a;
+}
+
+#subContent{
+	width: 1000px;
+	height: 480px;
+/*	background-image:url('../image/dolphin.jpg');*/
+	margin: 0 auto;
+}
+
+#subContentMenu{
+	width: 1000px;
+	height: 70px;	
+	background-color: #FFFFFF;
+}
+
+#subContentMenuLogo{
+	width: 350px;
+	height: 70px;
+	background-image:url('../image/iacenter_350_70.png');
+	float: right;
+}
+								
+#subContentMenuUrl{
+	width: 650px;
+	height: 70px;
+	float: right;
+	display: table;
+/*	vertical-align: middle;*/
+}
+
+#subContentMenuUrlInner{
+	width: 550px;
+	height: 30px;
+	display: table-cell;
+	vertical-align: middle;
+/*	display: inline-block;*/
+	padding-right: 4px;
+}
+
+#subContentMenuUrlInner a{
+	font-size: 10pt;
+	font-weight: bold;
+	color: #aaaaaa;
+}
+
+#subContentMenuUrlInner a:hover{
+	color: #333333;
+}
+
+#subContentImage{
+	width: 100%;
+	height: 240px;
+	background-color: #ffffff;
+}
+
+#subContentImageInner{
+	width: 1000px;
+	height: 240px;
+	background-image:url('../image/bg_240_1000_1.jpg');
+	margin: 0 auto;
+}
+
+#subContentCourse{
+	width: 100%;
+	height: 283px;
+	background-color: #cccccc;
+}
+
+#subContentCourseInner{
+	width: 1000px;
+	height: 283px;
+	margin: 0 auto;
+}
+
+#tabsMain{
+
+}
+
+.tabsTab{
+	height: 230px;
+    overflow: auto;
+}
+
+#courseList
+{
+    height: 230px;
+}
+#courseList ul{
+	list-style: none;
+	margin-top: 3px;
+	padding-right: 0px;
+}
+
+#courseList ul li{
+	margin: 0;
+	padding: 0;
+}
+
+#courseDetail{
+	width: 960px;
+	display: block;
+	overflow: auto;
+	margin-top: 5px;
+}
+
+#courseDetail .courseDetailSectionLeft{
+	float: right;
+	border: 1px solid #ccc;
+	width: 300px;
+	height: 225px;
+	background-color: #ffffff;
+}
+
+#courseDetail .courseDetailSectionLeft .courseImageDiv{
+	margin: 0 auto;
+	width: 275px;
+	height: 165px;
+	margin-top: 5px;
+}
+
+#courseDetail .courseDetailSectionLeft .courseImageDiv .courseImage{
+	width: 275px;
+	height: 165px;
+}
+
+#courseDetail .courseDetailSectionLeft .courseTitleDiv{
+	margin: 0 auto;
+	width: 300px;
+	height: 50px;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #aaaaaa;
+	
+	display: table-cell;
+    padding-right: 4px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#courseDetail .courseDetailSectionRight{
+	float: right;
+	border: 0px solid #ffffff;
+	width: 650px;
+	height: 225px;
+}
+
+
+div#data{
+	width: 382px;
+	height: 240px;
+	position: absolute;
+	margin-top: 10px;
+	margin-right: 10px;
+	background-color: #2a2a2a;
+}
+
+#logoArghavan{
+	width: 382px;
+	height: 54px;	
+	background-image:url('../image/logo_382_54.jpg')
+}
+
+#formItem{
+	
+}
+
+#footer{
+	height: 15px;
+	width: 100%;
+}
+
+#forgotPassword a{
+	color: #99CCFF;
+}
+
+#forgotPassword a:hover{
+	color: #CCFFFF;
+}
+
+#userEnrollment a{
+	color: #99CCFF;
+}
+
+#userEnrollment a:hover{
+	color: #CCFFFF;
+}
+
+div.cellData{
+	width: 200px;
+}
+
+input[type=text], input[type=password] {
+	width: 195px;
+}
+
+input[type=submit]{
+	width: 120px;
+	height: 30px;
+	font-family: Tahoma;
+	font-size: 10pt;	
+}

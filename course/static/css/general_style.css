@@ -1,0 +1,78 @@
+﻿body
+{
+	direction: rtl;
+	font-size: 10pt;
+	font-family: Tahoma;
+    background-color: #ffffff;
+    height:100%;
+    width:100%;
+    margin:0px;
+}
+
+a
+{
+	text-decoration: none;	
+}
+
+div.row
+{
+	padding-top: 3px;
+	padding-left: 3px;
+	height: 40px;
+}
+
+div.buttonRow{
+    margin-right: 5px;
+}
+
+div.col
+{
+	float: right;
+	margin-right: 5px;
+}
+
+div.cellTitle
+{
+	float: right;
+	background: -moz-linear-gradient(#cccccc, #ffffff) repeat scroll 0 0 transparent;
+	/*background: -moz-linear-gradient(#cccccc, #dddddd) repeat scroll 0 0 transparent;*/
+	padding-right: 5px;
+	border-color: #cccccc;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0px 4px 4px 0px;
+	width: 105px;
+	height: 35px;
+	line-height: 35px;
+	vertical-align: middle;
+}
+
+div.cellData
+{
+	border: 1px solid #cccccc;
+	border-radius: 4px 0 0 4px;
+	float: right;
+	height: 35px;
+	vertical-align: middle;
+	display: table-cell;
+	width: 120px;
+}
+
+div.cellDataTwice
+{
+	border: 1px solid #cccccc;
+	border-radius: 4px 0 0 4px;
+	float: right;
+	height: 35px;
+	vertical-align: middle;
+	display: table-cell;
+	width: 518px;
+}
+
+div.cellDataInner
+{
+	height: 35px;
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 4px;
+}

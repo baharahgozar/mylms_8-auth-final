@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+Welcome {{ UName }}
+<br>
+
+<a href='/profile'> show my profile </a>
+
+{% for item in course_list %}
+    {{ item.code }}
+    <br>
+    {{ item.tile}}
+    <hr>
+{% endfor %}
+
+</body>
+</html>

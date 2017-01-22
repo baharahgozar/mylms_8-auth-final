@@ -1,0 +1,235 @@
+﻿body{
+	background-color: #2a2a2a;
+}
+
+#header{
+	width: 100%;
+	height: 38px;
+}
+
+#subHeader{
+	width: 100%;
+	height: 38px;
+	margin: 0 auto;
+}
+
+#subHeaderLogo{
+	width: 268px;
+	height: 38px;
+	background-image:url('../image/logo_268_38.jpg');
+	float: left;
+}
+
+#content{
+	width: 100%;
+	height: 480px;
+	background-color: #2a2a2a;
+}
+
+#subContent{
+	width: 100%;
+	height: 480px;
+	margin: 0 auto;
+}
+
+#subContentMenu{
+	width: 100%;
+	height: 70px;	
+	background-color: #FFFFFF;
+}
+
+#subContentMenuLogo{
+	width: 350px;
+	height: 70px;
+	background-image:url('../image/iacenter_350_70.png');
+	float: right;
+}
+								
+#subContentMenuUrl{
+	width: 850px;
+	height: 70px;
+	float: right;
+	display: table;
+}
+
+#subContentMenuUrlInner{
+	width: 850px;
+	height: 30px;
+	display: table-cell;
+	vertical-align: middle;
+/*	display: inline-block;*/
+	padding-right: 4px;
+}
+
+#subContentMenuUrlInner a{
+	font-size: 10pt;
+	font-weight: bold;
+	color: #aaaaaa;
+}
+
+#subContentMenuUrlInner a:hover{
+	color: #333333;
+}
+
+
+#subContentLecture{
+	width: 100%;
+	display: block;
+	overflow: auto;
+	min-height: 650px;
+	background-color: #cccccc;
+}
+
+#subContentLecture .subContentLectureSection_Right{
+	float: right;
+	border: 1px solid #ccc;
+	width: 320px;
+	height: 650px;
+	background-color: #ffffff;
+}
+
+
+#subContentLecture .subContentLectureSection_Right .courseImageDiv{
+	margin: 0 auto;
+	width: 275px;
+	height: 165px;
+	margin-top: 5px;
+}
+
+#subContentLecture .subContentLectureSection_Right .courseImageDiv .courseImage{
+	width: 275px;
+	height: 100%;
+}
+
+#subContentLecture .subContentLectureSection_Right .courseTitleDiv{
+	margin: 0 auto;
+	width: 300px;
+	height: 50px;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #aaaaaa;
+	
+	display: table-cell;
+    padding-right: 4px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#subContentLecture .subContentLectureSection_Right .teacherDetail
+{
+    width: 300px;
+    height: 150px;
+    margin-top: 5px;
+}
+
+.teacherPhotoHolder
+{
+    float: right;
+    width: 130px;
+    height: 150px;
+}
+
+.teacherPhotoHolder .teacherPhoto{
+    margin: 0 auto;
+    width: 115px;
+    height: 150px;
+    border-radius: 35px;
+    position: relative;
+    left: 0px;
+}
+
+.teacherNameHolder{
+    display: table;
+    float: right;
+    margin: 0 auto;
+    width: 160px;
+    height: 150px;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #aaaaaa;
+}
+
+.teacherNameHolder .teacherName{
+    display: table-cell;
+    width: 160px;
+    height: 30px;
+    padding-right: 4px;
+    vertical-align: middle;
+}
+
+#subContentLecture .subContentLectureSection_Left{
+	float: right;
+	border: 0px solid #ffffff;
+	width: 920px;
+    height: 650px;
+}
+
+#subContentLecture .subContentLectureSection_Left .VideoListHolder{
+    margin: 0 auto;
+    width: 700px;
+    border: 1px solid #cc0000;
+    margin-top: 20px;
+}
+
+table.VideoList{
+    width: 700px;
+}
+
+tr.VideoListTitle td
+{
+    height: 25px;
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: #FF0000;
+    color: #ffffff;
+    text-align: center;
+}
+
+tr.VideoListCaptions td{
+    width: 180px;
+    height: 25px;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    background-color: #666666;
+    color: #ffffff;
+}
+
+tr.VideoListRow td{
+    width: 180px;
+    height: 25px;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    background-color: #999999;
+    color: #ffffff;
+}
+
+tr.VideoListRowAlternative td{
+    width: 180px;
+    height: 25px;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+    background-color: #cccccc;
+    color: #FFFFFF;
+}
+
+tr.VideoListCaptions td.videoLectureTitle{
+    width: 340px;
+}
+
+tr.VideoListContent td.videoLectureTitle{
+    width: 340px;
+    text-align: right;
+}
+
+tr td.videoLecturePlay a{
+    color: #0000FF;
+}
+
+/*
+videoLectureDuration
+videoLectureVisitCount
+videoLecturePlay
+*/

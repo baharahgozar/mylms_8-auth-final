@@ -1,0 +1,95 @@
+{% load staticfiles %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>آموزش دوره های پایتون</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/general_style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/page_home_style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/button_style.css' %}"/>
+
+    <script src="{% static 'JavaScript/jquery.js' %}" type="text/javascript"></script>
+    <script src="{% static 'JavaScript/jquery-ui.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'JavaScript/jquery.cookie.js' %}" type="text/javascript"></script>
+    <script src="{% static 'JavaScript/helpers.js' %}" type="text/javascript"></script>
+    <script src="{% static 'JavaScript/tabsHelper.js' %}" type="text/javascript"></script>
+    <script src="{% static 'JavaScript/home.js' %}" type="text/javascript"></script>
+
+    <link rel="icon" href="Images/favicon.ico" type="image/ico"/>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+
+<div id="header">
+</div>
+<div id="content">
+    <div id="subContent">
+        <div id="subContentMenu">
+            {% include 'include/nav.html' %}
+        </div>
+        <div id="subContentImage">
+            <div id="subContentImageInner">
+            </div>
+        </div>
+        <div id="subContentCourse">
+            <div id="subContentCourseInner">
+                <div id="tabsMain" style="margin-top: 2px; margin-right: 2px;">
+                    <ul>
+                        <li><a href="#fragment-2"><span id="#fragment-1">دوره های آموزشی</span></a></li>
+                    </ul>
+                    <div id="fragment-1" class="tabsTab">
+                        <div id="courseList">
+                            <ul>
+                                {% for course in courses %}
+                                    <form id="frmMain" action="/course/{{ course.code }}/" method="get">
+                                        <li>
+                                            <div id="courseDetail">
+                                                <div class="courseDetailSectionLeft">
+                                                    <div class="courseImageDiv">
+                                                        <img class="courseImage" src="{{ course.logo }}"
+                                                             alt="تصویر دوره"/>
+                                                    </div>
+                                                </div>
+                                                <div class="courseDetailSectionRight">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="cellTitle">
+                                                                <span>کد دوره</span>
+                                                            </div>
+                                                            <div class="cellData">
+                                                                <div class="cellDataInner">
+                                                                    <span>{{ course.code }}</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="cellTitle">
+                                                                <span>نام دوره</span>
+                                                            </div>
+                                                            <div class="cellData">
+                                                                <div class="cellDataInner">
+                                                                    <span>{{ course.title }}</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </form>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
